@@ -1,0 +1,192 @@
+*:focus {
+  outline: none;
+}
+
+body {
+  background: #2b2b2b;
+  height: 100vh;
+  margin: 0px;
+  background: url(../../assets/img/bg.jpg);
+  background-size: cover;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: white;
+}
+form *{
+	animation: fadeIn 0.3s ease-in both;
+}
+form *:nth-child(3) {
+	animation-delay: 0.2s;
+}
+form *:nth-child(4) {
+	animation-delay: 0.4s;
+}
+form *:nth-child(5) {
+	animation-delay: 0.6s;
+}
+form *:nth-child(6) {
+	animation-delay: 0.8s;
+}
+form *:nth-child(7) {
+	animation-delay: 1s;
+}
+
+
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.active {
+  /* Animation start */
+  -webkit-animation: loading 1s;
+  -moz-animation: loading 1s;
+  -o-animation: loading 1s;
+  animation: loading 1s;
+}
+
+
+@-o-keyframes loading {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@-moz-keyframes loading {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@-webkit-keyframes loading {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes loading {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.wrong{
+	border-bottom: 0.1px solid rgb(255, 0, 0) !important;
+	transition: 0.3s;
+}
+
+.wrap {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 320px;
+    height: 380px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+  animation: pop 0.3s;
+}
+@keyframes pop {
+  0% {
+    transform: scale(0);
+  }
+}
+.wrap form {
+  padding: 5px 40px;
+}
+.wrap form h1 {
+  font-size: 30px;
+  color: white;
+  font-family: "Dosis", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+.wrap form h2 {
+  font-size: 20px;
+  color: #00bcd4;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: -30px 0px 40px;
+}
+.wrap form input {
+  padding: 12px;
+  border: 0px;
+  margin: 8px 12px;
+  width: calc(100% - 48px);
+  background: none;
+}
+.wrap form input[type="text"], .wrap form input[type="password"] {
+  border-bottom: 0.1px solid rgba(255, 255, 255, 0.25);
+  transition: 0.3s;
+  color: white;
+}
+.wrap form input[type="text"]:disabled{
+	cursor:no-drop;
+}
+.wrap form input[type="text"]:focus, .wrap form input[type="password"]:focus {
+	border-bottom: 0.1px solid rgb(32, 146, 182);
+}
+.wrap form .button {
+  width: 200px;
+  margin: 20px auto 0px;
+}
+.wrap form .button input[type="submit"] {
+  border-radius: 50px;
+  margin: 15px 0px;
+  width: 200px;
+  color: white;
+  background: #089dca;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.wrap form .button input[type="submit"]:disabled {
+	background: #076a88 !important;
+	cursor:no-drop;
+}
+.wrap form .button input[type="submit"]:hover {
+  background: #00bcd4;
+}
+.wrap form .forgotPass {
+  width: 100%;
+  text-align: center;
+  margin: -5px 0px 0px;
+}
+.wrap form .forgotPass span {
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #848484;
+  transition: 0.3s;
+}
+.wrap form .forgotPass span:hover {
+  color: white;
+}

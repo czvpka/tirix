@@ -1,0 +1,163 @@
+body {
+  margin: 0px;
+}
+
+header section {
+  position: relative;
+}
+header .header {
+  height: 190px;
+  background: linear-gradient(90deg, #a32bcc, #4f08cc);
+}
+header .header .headline {
+  margin: 85px -140px;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  width: 280px;
+  text-align: center;
+}
+header .header .headline a {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 20px;
+  color: white;
+}
+header .fixed {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1000;
+}
+header .sub-header {
+  height: 80px;
+  background: #262626;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+}
+header .sub-header nav {
+  position: relative;
+  width: 100%;
+}
+header .sub-header nav ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  text-align: center;
+  width: 600px;
+}
+header .sub-header nav ul a {
+  color: #cacaca;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: 31px 25px;
+  width: 100%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+header .sub-header nav ul a li {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+header .sub-header nav ul a:hover {
+  color: white;
+}
+
+main {
+  background: white;
+}
+main .headerSize {
+  margin-top: 80px !important;
+}
+main .container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0px auto;
+}
+main .container .items-grid .item-box {
+  width: 260px;
+  height: 270px;
+  margin: 20px 20px;
+  float: left;
+}
+
+main .container .items-grid .item-box[data-group="item"] {
+  background: red;
+}
+main .container .items-grid .item-box[data-group="boost"] {
+  background: blue;
+}
+main .container .items-grid .item-box[data-group="rank"] {
+  background: green;
+}
+main .container .items-grid .item-box[data-group="treasure"] {
+  background: orange;
+}
+
+
+@media only screen and (max-width: 1250px){
+
+	main .container {
+		max-width: 1050px;
+	}
+	
+	main .container .items-grid .item-box {
+		width: 222px;
+		height: 222px;
+	}
+}
+
+@media only screen and (max-width: 1100px){
+
+	main .container {
+		max-width: 788px;
+	}
+	
+}
+
+@media only screen and (max-width: 850px){
+
+	main .container {
+		max-width: 700px;
+	}
+	
+	main .container .items-grid .item-box {
+		width: 150px;
+		margin: 12px;
+		height: 150px;
+	}
+}
+
+@media only screen and (max-width: 740px){
+	
+	main .container {
+		max-width: 522px;
+	}
+	
+}
+
+@media only screen and (max-width: 560px){
+
+	main .container {
+		max-width: 350px;
+	}	
+	
+}
+
+@media only screen and (max-width: 360px){
+
+	main .container {
+		max-width: 290px;
+	}	
+	
+	main .container .items-grid .item-box {
+	    width: 125px;
+		margin: 10px;
+		height: 125px;
+	}
+	
+}
